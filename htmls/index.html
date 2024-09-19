@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio - Jianan Ni">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="icon" href="../static/rev.ico">
+    <title>Jianan Ni - Professional Portfolio</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Jianan Ni</h1>
+        <nav>
+            <menu class="menu">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </menu>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="music-control">
+            <img id="music_toggle" src="../static/pause_icon.png" alt="pause icon">
+        </div>
+        <!-- About Section -->
+        <section id="about" class="column-layout">
+            <div>
+                <h2>About Me</h2>
+                <img src="../static/resume.png" alt="Profile Picture">
+                <p>Hi, this is Jianan Ni, a software developer and data analyst with passion and patience for building efficient and scalable software solutions.</p>
+                <details>
+                    <summary>
+                        Interested in my experience?
+                    </summary>
+                    <p><a href="resume.html" target="_blank">Learn more</a></p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <table>
+                <tr>
+                    <th>Skill</th>
+                    <th>Proficiency</th>
+                </tr>
+                <tr>
+                    <td>Software Development</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>Data Analysis</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>Technical Support</td>
+                    <td>Advanced</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Certifications Gallery -->
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="gallery">
+                <div class="cert">
+                    <img src="../static/cert01.png" alt="Certification Azure 01">
+                    <p>Azure Database Administrator Associate</p>
+                </div>
+                <div class="cert">
+                    <img src="../static/cert02.png" alt="Certification Azure 02">
+                    <p>Azure Logic Apps Specialist</p>
+                </div >
+                <div class="cert">
+                    <img src="../static/cert03.png" alt="Certification ITIL 03">
+                    <p>ITIL Foundation</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video and Audio -->
+        <section>
+            <h2>Portfolio Highlights</h2>
+            <video controls>
+                <source src="../static/kaggle_code.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!--autoplay is stable-->
+            <audio id="background-audio" controls autoplay loop>
+                <source src="../static/Secret_of_Immortality.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact: <a href="mailto:ni.jian@northeastern.edu">ni.jian@northeastern.edu</a> | Phone: <a href="tel:+1234567890">+1(234)-456-7890</a></p>
+        <p>&copy; 2024 Jianan Ni. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Get the audio and music icon elements
+        var audio = document.getElementById("background-audio");
+        var musicIcon = document.getElementById("music_toggle");
+
+        // Add click event to toggle play/pause
+        musicIcon.addEventListener("click", function() {
+            if (audio.paused) {
+                audio.play();  // Play the audio
+                musicIcon.src = "../static/pause_icon.png"; // Change icon to pause
+            } else {
+                audio.pause(); // Pause the audio
+                musicIcon.src = "../static/play_icon.png";  // Change icon back to music
+            }
+        });
+    </script>
+</body>
+
+</html>
