@@ -99,7 +99,6 @@ th, td {
 }
 
 .gallery img:hover {
-    opacity: 0.8;
     width: 100%;
     z-index: 10;
 }
@@ -181,9 +180,6 @@ footer p {
 menu a, footer a {
     color: #fff;
 }
-footer a:hover {
-    text-decoration: underline;
-}
 a {
     color: #4b4b50;
     font-weight: bold;
@@ -215,9 +211,6 @@ header p {
 .music-control img {
     width:50px;
     height:50px;
-}
-.music-control:hover {
-    color: #f00; /* Change color on hover */
 }
 audio {
     display: none;
