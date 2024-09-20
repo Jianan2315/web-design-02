@@ -137,6 +137,9 @@ label, input, textarea, button {
         width: 98%;
         border-radius: 5%;
     }
+    .gallery p {
+        color: #00b2f3;
+    }
 }
 
 @media screen and (max-width: 365px) {
@@ -147,8 +150,11 @@ label, input, textarea, button {
     .menu li {
         margin: 2% 0;
     }
-    .gallery {
-        flex-direction: column;
+    .gallery img {
+        width: 98%;
+    }
+    .gallery p {
+        color: #ffa743;
     }
 }
 
