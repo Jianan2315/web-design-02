@@ -33,19 +33,19 @@
         <section id="about" class="column-layout">
             <div>
                 <h2>About Me</h2>
-                <img src="../static/resume.png" alt="Profile Picture">
+                <img src="../static/resume_partial.png" alt="Profile Picture">
                 <p>Hi, this is Jianan Ni, a software developer and data analyst with passion and patience for building efficient and scalable software solutions.</p>
                 <details>
                     <summary>
-                        Interested in my experience?
+                        <i>Interested in my experience?</i>
                     </summary>
-                    <p><a href="resume.html" target="_blank">Learn more</a></p>
+                    <p><a href="resume.html" target="_blank">Click to access more details.</a></p>
                 </details>
             </div>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills">
+        <section id="skills" class="skills">
             <h2>Skills</h2>
             <table>
                 <tr>
@@ -93,7 +93,7 @@
                 <source src="../static/kaggle_code.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <!--autoplay is stable-->
+            <!--autoplay is not stable-->
             <audio id="background-audio" controls autoplay loop>
                 <source src="../static/Secret_of_Immortality.mp3" type="audio/mp3">
                 Your browser does not support the audio element.
@@ -129,18 +129,16 @@
     </footer>
 
     <script>
-        // Get the audio and music icon elements
         var audio = document.getElementById("background-audio");
         var musicIcon = document.getElementById("music_toggle");
 
-        // Add click event to toggle play/pause
         musicIcon.addEventListener("click", function() {
             if (audio.paused) {
-                audio.play();  // Play the audio
-                musicIcon.src = "../static/pause_icon.png"; // Change icon to pause
+                audio.play();
+                musicIcon.src = "../static/pause_icon.png";
             } else {
-                audio.pause(); // Pause the audio
-                musicIcon.src = "../static/play_icon.png";  // Change icon back to music
+                audio.pause();
+                musicIcon.src = "../static/play_icon.png";
             }
         });
     </script>

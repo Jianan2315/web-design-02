@@ -1,4 +1,4 @@
-# Professional Portfolio Website - [Your Name]
+# Professional Portfolio Website - Jianan Ni
 
 This project is a personal portfolio website showcasing my skills, experience, certifications, and contact information. The portfolio is built using HTML, HTML5, CSS, and includes several interactive and responsive features, following modern web development practices.
 
@@ -109,4 +109,4 @@ This project is a personal portfolio website showcasing my skills, experience, c
 3. Edit the content as needed in `index.html` and `style.css` files to customize for your professional details.
 
 ## Author
-- [Your Name]
+- Jianan Ni
