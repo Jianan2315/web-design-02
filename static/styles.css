@@ -5,6 +5,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     background-color: #f4f4f4;
+    min-width: 300px;
 }
 
 header, footer {
@@ -34,20 +35,20 @@ header h1, footer p {
     text-decoration: none;
 }
 
-/* Column Layout */
-.column-layout {
+/* About Layout */
+.about-layout {
     display: flex;
     padding: 20px 0;
 }
 
-.column-layout img {
+.about-layout img {
     width: 20%;
     border-radius: 95%;
     margin: 1% 1%;
     float: left;
     transition: width 4s ease, opacity 1.5s ease;
 }
-.column-layout img:hover {
+.about-layout img:hover {
     opacity: 0.9;
     width: 98%;
     z-index: 10;
@@ -116,46 +117,6 @@ label, input, textarea, button {
     margin-bottom: 10px;
 }
 
-/* Responsiveness */
-@media screen and (max-width: 768px) {
-    .column-layout {
-        flex-direction: column;
-        align-items: center;
-    }
-    .gallery {
-        display: grid;
-        justify-items: center;
-    }
-    .gallery img {
-        width: 80%;
-    }
-    .cert {
-        width: 98%;
-    }
-    .column-layout img {
-        width: 98%;
-        border-radius: 5%;
-    }
-    .gallery p {
-        color: #00b2f3;
-    }
-}
-
-@media screen and (max-width: 365px) {
-    .menu {
-        display: grid;
-        align-items: center;
-    }
-    .menu li {
-        margin: 2% 0;
-    }
-    .gallery img {
-        width: 98%;
-    }
-    .gallery p {
-        color: #ffa743;
-    }
-}
 
 /* Add more*/
 main {
@@ -204,9 +165,7 @@ header p {
     position: fixed;
     top: 120px;
     right: 20px;
-    font-size: 30px;
     cursor: pointer;
-    color: #000;
 }
 .music-control img {
     width:50px;
@@ -223,4 +182,56 @@ details a {
 }
 textarea {
     max-width: 100%;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .about-layout div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery {
+        display: grid;
+        justify-items: center;
+    }
+    .gallery img {
+        width: 80%;
+    }
+    .cert {
+        width: 98%;
+    }
+    .about-layout img {
+        width: 98%;
+        border-radius: 5%;
+    }
+    .gallery p {
+        color: #00b2f3;
+    }
+    .music-control {
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .menu {
+        display: grid;
+        align-items: center;
+    }
+    .menu li {
+        margin: 2% 0;
+    }
+    .gallery img {
+        width: 98%;
+    }
+    .gallery p {
+        color: #ffa743;
+    }
+    .music-control {
+        top: 200px;
+    }
+    .music-control img{
+        width: 36px;
+        height: 36px;
+    }
 }

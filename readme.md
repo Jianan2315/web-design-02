@@ -1,112 +1,69 @@
-# Professional Portfolio Website - Jianan Ni
+# Jianan Ni - Professional Portfolio and Resume
 
-This project is a personal portfolio website showcasing my skills, experience, certifications, and contact information. The portfolio is built using HTML, HTML5, CSS, and includes several interactive and responsive features, following modern web development practices.
+This project mainly consists of two HTML files (`index.html` and `resume.html`) and a CSS file (`styles.css`) to present a professional portfolio and resume. Below is an overview of the main HTML tags and CSS classes used in the project.
 
-## HTML and HTML5 Tags Used
+## HTML Tags
 
-### 1. `<html>`
-- Defines the root of an HTML document.
+### Structural Elements
+- `<html>`: Root element of the HTML document.
+- `<head>`: Contains metadata, title, and links to stylesheets.
+- `<body>`: Main content of the web page.
+- `<header>`: Defines the header section, including the navigation menu and page title.
+- `<main>`: Wraps the main content of the page.
+- `<footer>`: Defines the footer section with contact information.
+- `<section>`: Groups related content, such as the "About", "Skills", "Certifications", and "Contact" sections.
+- `<nav>`: Contains the navigation links.
+- `<ul>`: Unordered list, used for lists like the navigation menu.
+- `<li>`: List item within a list.
+- `<table>`: Displays tabular data such as skills and education.
+- `<tr>`, `<td>`, `<th>`: Represent rows and cells in tables.
+- `<form>`: Collects user input (e.g., contact form).
+- `<video>`: Embeds a video file with controls.
+- `<audio>`: Embeds an audio file with autoplay and loop functionalities.
+- `<img>`: Embeds images, such as certifications and profile pictures.
+- `<details>`: Provides a collapsible section for additional information.
+- `<summary>`: A summary or title for the collapsible details element.
 
-### 2. `<head>`
-- Contains metadata and links to external resources (e.g., stylesheets).
+### Meta Elements
+- `<meta charset="UTF-8">`: Defines the character encoding for the document.
+- `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Ensures responsive design for mobile devices.
+- `<meta name="description" content="...">`: Describes the content of the page for SEO purposes.
 
-### 3. `<meta>`
-- Provides metadata about the HTML document (character set, viewport, description).
+### Links and Hyperlink
+- `<link rel="stylesheet" href="...">`: Links to the external CSS file.
+- `<a href="#section-id">`: Anchor tags are used within the navigation `menu` block to link to specific sections,such as "**About Me**", "**Skills**", "**Certifications**", and "**Contact**".
+- `<a href="mailto:...">`: Creates email links.
+- `<a href="#section-id">`: Creates navigation links within the page.
 
-### 4. `<link>`
-- Links external resources like the CSS file (`style.css`) and favicon.
+## CSS Classes and IDs
 
-### 5. `<title>`
-- Defines the title of the webpage, displayed on the browser tab.
+### General Layout
+- `body`: Sets general styles for the webpage, including font, margin, and background color.
+- `header`, `footer`: Styles the header and footer sections with background color, text color, and padding.
+- `menu`: Defines the navigation menu layout, with flexbox for horizontal alignment.
+- `about-layout`: Used for the "About Me" section to control the layout of the content and images.
 
-### 6. `<header>`
-- Contains introductory content, including the navigation menu and the website title.
+### Tables and Lists
+- `table`: Defines the style for the table element, including border collapse and padding.
+- `ul`, `li`: Styles unordered lists, such as the navigation menu or skill list.
 
-### 7. `<nav>`
-- Defines the navigation section with a menu for easy access to different parts of the webpage.
+### Media (Images, Video, and Audio)
+- `img`: Styles images, particularly in the gallery and about sections, with hover effects. In the "About Me" section, the image uses the `float: left;` property to wrap text around the image, providing a more visually appealing layout.
+- `gallery`: Flexbox layout for displaying certification images.
+- `video`, `audio`: Sets styles and behavior for multimedia elements.
 
-### 8. `<ul>` and `<li>`
-- Creates an unordered list for the menu.
+### Forms
+- `form`: Defines the layout for the contact form, including input and textarea elements.
+- `input`, `textarea`, `button`: Styles the form elements for user interaction.
 
-### 9. `<a>`
-- Defines hyperlinks for navigation and external links (e.g., contact details via `mailto` and `tel`).
+### Responsiveness
+- Media queries: Used to adjust the layout for different screen sizes (e.g.,  **iPad(768px)** and **Smart phones (350–365px)**).
+- `flex`, `grid`: Applied to various sections (**About me** and **Certifications**) to ensure responsive layouts across screen sizes.
 
-### 10. `<main>`
-- Wraps the main content of the website.
+## JavaScript
+- Simple script to toggle background music play/pause on user interaction with the music control button.
 
-### 11. `<section>`
-- Organizes content into thematic sections (About, Skills, Experience, Certifications, Contact).
-
-### 12. `<img>`
-- Embeds images (profile picture and certification images).
-
-### 13. `<h1>`, `<h2>`
-- Defines headings for different sections to improve readability and SEO.
-
-### 14. `<p>`
-- Defines paragraphs for descriptive content.
-
-### 15. `<table>`
-- Displays tabular data, such as skills and proficiency.
-
-### 16. `<th>`, `<td>`, `<tr>`
-- Defines table headers, table data, and table rows.
-
-### 17. `<form>`
-- Defines a form for submitting contact information.
-
-### 18. `<input>`
-- Defines form fields (e.g., text, email, phone number).
-
-### 19. `<textarea>`
-- Defines a multi-line input field for the message in the contact form.
-
-### 20. `<button>`
-- Creates a button to submit the form.
-
-### 21. `<figure>`
-- Wraps images in the certification gallery with captions.
-
-### 22. `<figcaption>`
-- Provides captions for images in the gallery.
-
-### 23. `<footer>`
-- Defines the footer section with contact information and copyright.
-
-### 24. `<video>` and `<audio>`
-- Embeds video and audio elements to showcase portfolio highlights.
-
-### 25. `<source>`
-- Defines the source file for the media elements (video/audio).
-
-### 26. `<meta name="viewport">`
-- Ensures the website is responsive and adapts to various screen sizes.
-
-## CSS and Features
-
-- **External CSS File (`style.css`)**: The styling for the website is handled using an external CSS file to maintain separation of structure and style.
-
-- **Column Layout**: The content is organized in a flexible column layout using CSS Flexbox to ensure a responsive structure.
-
-- **Float and Overflow Properties**: Applied to certain sections to ensure proper content flow and layout consistency.
-
-- **Table Styling**: The skills table is styled using CSS selectors to improve its appearance and readability.
-
-- **Image Gallery**: A professional image gallery is created using `<figure>` and `<figcaption>` elements, with hover effects applied using CSS.
-
-- **Responsiveness**: The website is fully responsive, using media queries to adjust the layout for tablet (768px) and smartphone (350-365px) screen sizes.
-
-## Media Queries
-
-- The website is designed to adapt to different devices (e.g., tablets and smartphones). Media queries ensure proper scaling and layout restructuring on devices like:
-    - iPads (768px)
-    - Smartphones (350-365px)
-
-## How to Run
-
-1. Clone the repository to your local machine.
-2. Open the `index.html` file in your browser to view the portfolio website.
-3. Edit the content as needed in `index.html` and `style.css` files to customize for your professional details.
-
-## Author
-- Jianan Ni
+## Project Structure
+- `index.html`: The main portfolio page, showcasing skills, certifications, and contact information.
+- `resume.html`: The detailed professional resume.
+- `styles.css`: Defines the visual styles for both HTML files.
